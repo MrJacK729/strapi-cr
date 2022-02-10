@@ -1,0 +1,78 @@
+{
+  "kind": "collectionType",
+  "collectionName": "crs",
+  "info": {
+    "singularName": "cr",
+    "pluralName": "crs",
+    "displayName": "cr",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "cr_id": {
+      "type": "uid"
+    },
+    "subject": {
+      "type": "string"
+    },
+    "state": {
+      "type": "enumeration",
+      "enum": [
+        "Attente",
+        "Analyse",
+        "Estimation",
+        "Estime",
+        "Clos",
+        "Planifie",
+        "Valide"
+      ]
+    },
+    "otrs_id": {
+      "type": "integer"
+    },
+    "Categorie": {
+      "type": "string"
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "creationDate": {
+      "type": "date"
+    },
+    "nsiView": {
+      "type": "boolean"
+    },
+    "validDateDcc": {
+      "type": "date"
+    },
+    "validDateCirb": {
+      "type": "date"
+    },
+    "cabComment": {
+      "type": "json"
+    },
+    "nsiComment": {
+      "type": "json"
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "priority": {
+      "type": "integer"
+    },
+    "demandeur": {
+      "type": "string"
+    },
+    "estimation": {
+      "type": "decimal"
+    }
+  }
+}
